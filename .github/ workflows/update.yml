@@ -1,9 +1,8 @@
 name: Update selected proxies
 on:
   schedule:
-    # Run every 24 hours (00:00 UTC)
-    - cron: "0 0 * * *"
-  # Allow manual runs from the Actions tab
+    # Run every 6 hours (00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: "0 */6 * * *"
   workflow_dispatch:
     inputs:
       count:
@@ -20,7 +19,7 @@ jobs:
     name: Fetch · Check · Select · Commit
     runs-on: ubuntu-latest
     permissions:
-      contents: write          # needed to push the updated output files
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,7 +28,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          # No pip packages needed — script uses stdlib only
 
       - name: Determine parameters
         id: params
@@ -57,7 +55,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add output/proxies.txt output/proxies.html
-          # Only commit when files actually changed
           if git diff --cached --quiet; then
             echo "No changes — nothing to commit."
           else
