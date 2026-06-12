@@ -1,0 +1,64 @@
+name: Update selected proxies
+on:
+  schedule:
+    # Run every 24 hours (00:00 UTC)
+    - cron: "0 0 * * *"
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "Number of proxies to select"
+        required: false
+        default: "100"
+      no_check:
+        description: "Skip TCP checks (diversity-only)?"
+        required: false
+        default: "false"
+
+jobs:
+  update:
+    name: Fetch · Check · Select · Commit
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Determine parameters
+        id: params
+        run: |
+          COUNT="${{ github.event.inputs.count || '100' }}"
+          NO_CHECK_FLAG=""
+          if [ "${{ github.event.inputs.no_check }}" = "true" ]; then
+            NO_CHECK_FLAG="--no-check"
+          fi
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          echo "no_check=$NO_CHECK_FLAG" >> "$GITHUB_OUTPUT"
+
+      - name: Run selector
+        run: |
+          python select_proxies.py \
+            --count ${{ steps.params.outputs.count }} \
+            --out output/proxies.txt \
+            --html output/proxies.html \
+            --timeout 4 \
+            --workers 200 \
+            ${{ steps.params.outputs.no_check }}
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/proxies.txt output/proxies.html
+          if git diff --cached --quiet; then
+            echo "No changes — nothing to commit."
+          else
+            git commit -m "chore: update proxies $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
