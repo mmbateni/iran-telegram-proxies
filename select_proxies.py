@@ -94,6 +94,14 @@ def _make_clean_url(server: str, port: int, secret: str) -> str:
     """Reconstruct a clean, well-formed tg://proxy link."""
     return f"tg://proxy?server={server}&port={port}&secret={secret}"
 
+def _make_tme_url(server: str, port: int, secret: str) -> str:
+    """Return an https://t.me/proxy link.
+
+    Uses standard HTTPS so it works in every browser regardless of whether
+    Telegram has registered the tg:// URI handler on the device.
+    """
+    return f"https://t.me/proxy?server={server}&port={port}&secret={secret}"
+
 def parse_proxy(line: str) -> dict | None:
     """
     Parse a tg://proxy?... or https://t.me/proxy?... line.
@@ -276,14 +284,14 @@ def write_html(proxies: list[dict], path: str) -> None:
         type_badge = f'<span class="badge type-{stype}">{stype}</span>'
         server_esc = html_module.escape(p["server"])
         raw_esc    = html_module.escape(p["raw"])
-        tg_link    = html_module.escape(p["raw"])
+        tme_link   = html_module.escape(_make_tme_url(p["server"], p["port"], p["secret"]))
         rows.append(f"""
 <tr>
 <td class="num">{i}</td>
 <td>{alive_badge} {type_badge}</td>
 <td class="server">{server_esc}:{p['port']}</td>
 <td class="actions">
-<a href="{tg_link}" class="btn open">Open in Telegram</a>
+<a href="{tme_link}" class="btn open" target="_blank" rel="noopener">Open in Telegram</a>
 <button class="btn copy" onclick="copyText('{raw_esc}')">Copy link</button>
 </td>
 </tr>""")
