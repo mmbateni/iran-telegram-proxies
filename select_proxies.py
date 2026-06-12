@@ -43,6 +43,33 @@ DEFAULT_TIMEOUT = 4    # seconds for TCP connect
 DEFAULT_WORKERS = 200  # concurrent socket checkers
 
 # ---------------------------------------------------------------------------
+# Hostname validation
+# ---------------------------------------------------------------------------
+_LABEL_RE = re.compile(r"^[a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?$")
+
+def is_valid_hostname(host: str) -> bool:
+    """Return True if *host* is a plausible IPv4, IPv6, or DNS name.
+
+    Rejects anything Python's IDNA encoder would refuse (empty labels,
+    labels > 63 chars, total name > 253 chars), which would cause
+    socket.create_connection() to raise UnicodeError at check time.
+    """
+    # Plain IPv4  (e.g. 1.2.3.4)
+    if re.match(r"^\d{1,3}(\.\d{1,3}){3}$", host):
+        return True
+    # IPv6 — bracketed ([::1]) or bare (contains a colon)
+    if host.startswith("[") or ":" in host:
+        return True
+    # DNS hostname
+    name = host.rstrip(".")      # strip optional trailing dot (FQDN)
+    if not name or len(name) > 253:
+        return False
+    for label in name.split("."):
+        if not label or len(label) > 63 or not _LABEL_RE.match(label):
+            return False
+    return True
+
+# ---------------------------------------------------------------------------
 # Fetching
 # ---------------------------------------------------------------------------
 def fetch_lines(url: str) -> list[str]:
@@ -79,7 +106,7 @@ def parse_proxy(line: str) -> dict | None:
             server = m.group(1)
             port   = int(m.group(2))
             secret = m.group(3).lower()
-            if not re.match(r"^[\w.\-:]{3,}$", server):
+            if not re.match(r"^[\w.\-:]{3,}$", server) or not is_valid_hostname(server):
                 return None
             return {
                 "raw":    _make_clean_url(server, port, secret),
@@ -108,7 +135,7 @@ def parse_proxy(line: str) -> dict | None:
             return None
         port   = int(port_s)
         secret = secret.lower()
-        if not re.match(r"^[\w.\-:]{3,}$", server):
+        if not re.match(r"^[\w.\-:]{3,}$", server) or not is_valid_hostname(server):
             return None
         return {
             "raw":    _make_clean_url(server, port, secret),
@@ -127,7 +154,11 @@ def check_tcp(proxy: dict, timeout: float) -> bool:
     try:
         with socket.create_connection((proxy["server"], proxy["port"]), timeout=timeout):
             return True
-    except OSError:
+    except (OSError, UnicodeError):
+        # OSError  — connection refused, timeout, network unreachable, etc.
+        # UnicodeError — IDNA encoding fails for malformed hostnames that
+        #                slipped through the parse-time validator (belt-and-
+        #                suspenders guard; should not normally be reached).
         return False
 
 def run_checks(proxies: list[dict], timeout: float, workers: int) -> None:
