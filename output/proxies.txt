@@ -1,4 +1,4 @@
-# Telegram MTProto proxies — 100 selected — 2026-06-14 04:49 UTC
+# Telegram MTProto proxies — 100 selected — 2026-06-15 05:04 UTC
 # Source: https://github.com/MahsaNetConfigTopic/proxy
 # Legend: ✅ alive (TCP responded)  ⚠ unverified (TCP timeout)
 
@@ -11,14 +11,14 @@ tg://proxy?server=104.152.142.16&port=443&secret=eerigznjvxrfgrmcimjdeaty2ruewvr
 # ✅ [faketls ] port=  443  104.248.26.196
 tg://proxy?server=104.248.26.196&port=443&secret=eec80ff604fa45408f1d152624d3bffcf276616e2e6e616a76612e636f6d
 
-# ✅ [faketls ] port=  443  104.253.43.74
-tg://proxy?server=104.253.43.74&port=443&secret=ee05e177309b81b87d379e9f454c49374f79616e6465782e7275
+# ✅ [faketls ] port=  443  104.253.43.252
+tg://proxy?server=104.253.43.252&port=443&secret=eee14dc96febcc0d6ea1e3f7972e286a6679616e6465782e7275
 
 # ✅ [faketls ] port=  443  107.189.28.32
 tg://proxy?server=107.189.28.32&port=443&secret=eebe9ba010e83c95aa690b10c541d1db227777772e676f6f676c652e636f6d
 
 # ✅ [faketls ] port=  443  108.181.71.115
-tg://proxy?server=108.181.71.115&port=443&secret=ee1603010200010001fc030386e24c3add76616e2e6e616a76612e636f6d
+tg://proxy?server=108.181.71.115&port=443&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6d
 
 # ✅ [faketls ] port=  443  109.104.154.81
 tg://proxy?server=109.104.154.81&port=443&secret=ee0000f00f0f775555fffffff5006e2e696d656469612e737465616d706f77657265642e636f6d
@@ -41,8 +41,8 @@ tg://proxy?server=116.203.137.250&port=443&secret=ee1603010200010001fc030386e24c
 # ✅ [faketls ] port=  443  116.203.149.201
 tg://proxy?server=116.203.149.201&port=443&secret=eecf09e5861586f39dafe5aa1f2ff9f205726161682e6972
 
-# ✅ [faketls ] port=  443  117.55.202.95
-tg://proxy?server=117.55.202.95&port=443&secret=eenegydjvxrfgrmcimjdcqruewvrdgfuzxquy29tzmfyywthdi5jb212yw4ubmfqdmeuy29taaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+# ✅ [faketls ] port=  443  117.55.202.134
+tg://proxy?server=117.55.202.134&port=443&secret=eenegydjvxrfgrmcimjdcq
 
 # ✅ [faketls ] port=  443  130.49.218.57
 tg://proxy?server=130.49.218.57&port=443&secret=ee8aa50573bd2e964427df682f93935ce4646c2e676f6f676c652e636f6d
@@ -63,7 +63,7 @@ tg://proxy?server=135.181.115.164&port=443&secret=eerighjjvxrfgrmcimjdcq
 tg://proxy?server=135.181.187.233&port=443&secret=ee1603010200010001fc030386e24c3add666172616b61762e636f6d
 
 # ✅ [faketls ] port=  443  136.243.146.237
-tg://proxy?server=136.243.146.237&port=443&secret=eerighjjvxrfgrmcimjdcq
+tg://proxy?server=136.243.146.237&port=443&secret=eerighjjvxrfgrmcimjdcq==
 
 # ✅ [faketls ] port=  443  138.199.236.207
 tg://proxy?server=138.199.236.207&port=443&secret=eerighjjvxrfgrmcimjdcq
@@ -74,11 +74,11 @@ tg://proxy?server=138.201.195.175&port=443&secret=eerighjjvxrfgrmcimjdcq
 # ✅ [faketls ] port=  443  142.132.185.118
 tg://proxy?server=142.132.185.118&port=443&secret=ee008c3f6a9321de531462b058247cfd18676174657761792e696e7374616772616d2e636f6d
 
-# ✅ [faketls ] port=  443  144.124.224.94
-tg://proxy?server=144.124.224.94&port=443&secret=eeddnegydjvxrfgrmcimjq
+# ✅ [faketls ] port=  443  144.124.224.231
+tg://proxy?server=144.124.224.231&port=443&secret=eenegydjvxrfgrmcimjdcq
 
-# ✅ [faketls ] port=  443  144.124.225.175
-tg://proxy?server=144.124.225.175&port=443&secret=eecbagabaafwawog4kw63qaaaaruewvrdgfuzxquy29tzmfyywthdi5jb212yw4ubmfqdmeuy29t
+# ✅ [faketls ] port=  443  144.124.225.193
+tg://proxy?server=144.124.225.193&port=443&secret=eenegydjvxrfgrmcimjdcq
 
 # ✅ [faketls ] port=  443  144.124.226.236
 tg://proxy?server=144.124.226.236&port=443&secret=eenegydjvxrfgrmcimjdcq
@@ -90,7 +90,7 @@ tg://proxy?server=144.124.227.214&port=443&secret=eeddnegydjvxrfgrmcimjq
 tg://proxy?server=144.124.228.187&port=443&secret=eenegydjvxrfgrmcimjdcq
 
 # ✅ [faketls ] port=  443  144.124.229.192
-tg://proxy?server=144.124.229.192&port=443&secret=eenegydjvxrfgrmcimjdcqruewvrdgfuzxquy29tzmfy
+tg://proxy?server=144.124.229.192&port=443&secret=eenegydjvxrfgrmcimjdcq
 
 # ✅ [faketls ] port=  443  144.124.230.25
 tg://proxy?server=144.124.230.25&port=443&secret=eenegydjvxrfgrmcimjdcq****
@@ -110,8 +110,8 @@ tg://proxy?server=146.103.116.88&port=443&secret=eenegydjvxrfgrmcimjdcq
 # ✅ [faketls ] port=  443  146.103.119.205
 tg://proxy?server=146.103.119.205&port=443&secret=eeddnegydjvxrfgrmcimjq
 
-# ✅ [faketls ] port=  443  146.103.120.97
-tg://proxy?server=146.103.120.97&port=443&secret=eeddnegydjvxrfgrmcimjq
+# ✅ [faketls ] port=  443  146.103.120.241
+tg://proxy?server=146.103.120.241&port=443&secret=eenegydjvxrfgrmcimjdcq
 
 # ✅ [faketls ] port=  443  146.103.121.189
 tg://proxy?server=146.103.121.189&port=443&secret=eexifpb2gbv9shh2kvi5l
@@ -149,9 +149,6 @@ tg://proxy?server=157.180.121.35&port=443&secret=eenegydjvxrfgrmcimjdcq
 # ✅ [faketls ] port=  443  157.180.77.54
 tg://proxy?server=157.180.77.54&port=443&secret=ee0000f00f0f775555fffffff5006e2e696d656469612e737465616d706f77657265642e636f6d
 
-# ✅ [faketls ] port=  443  157.180.95.47
-tg://proxy?server=157.180.95.47&port=443&secret=eenegydjvxrfgrmcimjdcq
-
 # ✅ [faketls ] port=  443  157.240.22.2
 tg://proxy?server=157.240.22.2&port=443&secret=ee00000000000000000000000000000000696f2e696f
 
@@ -179,8 +176,14 @@ tg://proxy?server=165.232.81.38&port=443&secret=eed77db43ee3721f0fcb40a4ff63b5cd
 # ✅ [faketls ] port=  443  165.245.215.108
 tg://proxy?server=165.245.215.108&port=443&secret=ee4141322ba85f4966835bfffaa24f05
 
+# ✅ [faketls ] port=  443  167.233.12.183
+tg://proxy?server=167.233.12.183&port=443&secret=eec333a2a17e2be71f9cf1887f3b22dc7d
+
 # ✅ [faketls ] port=  443  167.235.232.149
 tg://proxy?server=167.235.232.149&port=443&secret=eeda6aa7c2ac619c060f355f3f173257377365676d656e742e70726f642e626964722e696f
+
+# ✅ [faketls ] port=  443  171.22.183.106
+tg://proxy?server=171.22.183.106&port=443&secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d
 
 # ✅ [faketls ] port=  443  172.65.234.91
 tg://proxy?server=172.65.234.91&port=443&secret=ee79e344818749bd7ac519130220c25d0973706565642e636c6f7564666c6172652e636f6d
@@ -230,14 +233,14 @@ tg://proxy?server=188.40.70.227&port=443&secret=eerighjjvxrfgrmcimjdcq==
 # ✅ [faketls ] port=  443  193.109.120.106
 tg://proxy?server=193.109.120.106&port=443&secret=ee100404ff0f48064fffffff9001b8696d696d656469612e737465616d706f77657265642e636f6d
 
-# ✅ [faketls ] port=  443  193.17.95.12
-tg://proxy?server=193.17.95.12&port=443&secret=eecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63q==
+# ✅ [faketls ] port=  443  193.17.95.43
+tg://proxy?server=193.17.95.43&port=443&secret=eecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63q==
 
 # ✅ [faketls ] port=  443  194.156.119.150
 tg://proxy?server=194.156.119.150&port=443&secret=eee949387e1232f771bd77f9a6de7c293577622e7275
 
-# ✅ [faketls ] port=  443  194.26.141.97
-tg://proxy?server=194.26.141.97&port=443&secret=ee100404ff0f48064fffffff9001b8696d696d656469612e737465616d706f77657265642e636f6d
+# ✅ [faketls ] port=  443  194.26.141.32
+tg://proxy?server=194.26.141.32&port=443&secret=ee100404ff0f48064fffffff9001b8696d696d656469612e737465616d706f77657265642e636f6d
 
 # ✅ [faketls ] port=  443  194.5.175.89
 tg://proxy?server=194.5.175.89&port=443&secret=ee000000000000000000000000000000007777772e4869646550726f78692e696f
@@ -248,9 +251,6 @@ tg://proxy?server=194.5.207.204&port=443&secret=ee6ed3474af8762909c3fb9091d5d42c
 # ✅ [faketls ] port=  443  198.16.107.91
 tg://proxy?server=198.16.107.91&port=443&secret=ee1603010200010001fc030386e24c3add76616e2e6e616a76612e636f6d
 
-# ✅ [faketls ] port=  443  2.26.146.69
-tg://proxy?server=2.26.146.69&port=443&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d
-
 # ✅ [faketls ] port=  443  2.26.52.43
 tg://proxy?server=2.26.52.43&port=443&secret=eef71bc22c81b68c59a26beabda30e4315706c617932676f2e636c6f7564
 
@@ -260,9 +260,6 @@ tg://proxy?server=2.27.12.116&port=443&secret=ee19130c695cf699d93f5a31ecf380d442
 # ✅ [faketls ] port=  443  2.27.4.58
 tg://proxy?server=2.27.4.58&port=443&secret=ee9d343635a76a38133c6d01e1c81f50cf706574726f766963682e7275
 
-# ✅ [faketls ] port=  443  2.27.41.207
-tg://proxy?server=2.27.41.207&port=443&secret=ee9436fa39ab47ccb34f217ac6d06b4e58617669746f2e7275
-
 # ✅ [faketls ] port=  443  2.58.172.47
 tg://proxy?server=2.58.172.47&port=443&secret=eeafb5b46ea72f6c385d0b134339b44d967777772e636c6f7564666c6172652e636f6d
 
@@ -271,6 +268,9 @@ tg://proxy?server=204.168.197.199&port=443&secret=eeaa16be732bcf0c80b07dbb4d072a
 
 # ✅ [faketls ] port=  443  209.127.228.162
 tg://proxy?server=209.127.228.162&port=443&secret=ee32b920dffb51643028e2f6b878d4eac16170706c652e636f6d
+
+# ✅ [faketls ] port=  443  212.147.231.72
+tg://proxy?server=212.147.231.72&port=443&secret=ee00112233445566778899aabbccddeeff6f70656e61692e636f6d
 
 # ✅ [faketls ] port=  443  212.192.13.122
 tg://proxy?server=212.192.13.122&port=443&secret=eea2008db783e7e5872d4250d2245d8e7c617a7572652e6d6963726f736f66742e636f6d
@@ -299,5 +299,5 @@ tg://proxy?server=31.220.75.12&port=443&secret=ee76f9b332e9c1802ed1d91a5de6d8018
 # ✅ [faketls ] port=  443  31.220.76.169
 tg://proxy?server=31.220.76.169&port=443&secret=eedb527145eb548da774b24e6c11d02021636c6f7564666c6172652e636f6d
 
-# ✅ [faketls ] port=  443  31.220.78.93
-tg://proxy?server=31.220.78.93&port=443&secret=ee5fcec9b1bf68764858dcb930f393ee72636c6f7564666c6172652e636f6d
+# ✅ [faketls ] port=  443  31.220.77.172
+tg://proxy?server=31.220.77.172&port=443&secret=eec42425e9d0f27562ec958ced3cde9c3b636c6f7564666c6172652e636f6d
