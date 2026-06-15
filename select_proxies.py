@@ -266,7 +266,7 @@ def write_txt(proxies: list[dict], path: str) -> None:
         tag   = "✅" if p.get("alive") else "⚠ "
         stype = secret_type(p["secret"])
         lines.append(f"# {tag} [{stype:8s}] port={p['port']:5d}  {p['server']}")
-        lines.append(p["raw"])
+        lines.append(_make_tme_url(p["server"], p["port"], p["secret"]))
         lines.append("")
     with open(path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
