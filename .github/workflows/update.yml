@@ -1,4 +1,9 @@
 name: Update selected proxies
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
 on:
   schedule:
     # Run every 24 hours (00:00 UTC)
@@ -24,6 +29,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python 3.12
         uses: actions/setup-python@v5
@@ -58,7 +65,21 @@ jobs:
           git add output/proxies.txt output/proxies.html
           if git diff --cached --quiet; then
             echo "No changes — nothing to commit."
-          else
-            git commit -m "chore: update proxies $(date -u '+%Y-%m-%d %H:%M UTC')"
-            git push
+            exit 0
           fi
+
+          git commit -m "chore: update proxies $(date -u '+%Y-%m-%d %H:%M UTC')"
+
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "Pushed successfully."
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt/5) — rebasing onto latest origin/${GITHUB_REF_NAME} and retrying…"
+            git fetch origin "${GITHUB_REF_NAME}"
+            git rebase "origin/${GITHUB_REF_NAME}"
+            sleep $((RANDOM % 6 + 2))
+          done
+
+          echo "Failed to push after retries." >&2
+          exit 1
