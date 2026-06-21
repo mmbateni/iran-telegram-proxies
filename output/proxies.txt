@@ -1,4 +1,4 @@
-# Telegram MTProto proxies — 100 selected — 2026-06-20 04:14 UTC
+# Telegram MTProto proxies — 100 selected — 2026-06-21 04:57 UTC
 # Source: https://github.com/MahsaNetConfigTopic/proxy
 # Legend: ✅ alive (TCP responded)  ⚠ unverified (TCP timeout)
 
@@ -100,9 +100,6 @@ https://t.me/proxy?server=144.124.232.130&port=443&secret=eexifpb2gbv9shh2kvi5l
 
 # ✅ [faketls ] port=  443  146.103.104.16
 https://t.me/proxy?server=146.103.104.16&port=443&secret=eenegydjvxrfgrmcimjdcq
-
-# ✅ [faketls ] port=  443  146.103.106.104
-https://t.me/proxy?server=146.103.106.104&port=443&secret=eeddnegydjvxrfgrmcimjq
 
 # ✅ [faketls ] port=  443  146.103.119.205
 https://t.me/proxy?server=146.103.119.205&port=443&secret=eeddnegydjvxrfgrmcimjq
@@ -301,3 +298,6 @@ https://t.me/proxy?server=31.220.73.75&port=443&secret=ee15561483d7091829be01a81
 
 # ✅ [faketls ] port=  443  31.220.74.142
 https://t.me/proxy?server=31.220.74.142&port=443&secret=ee95ff4820a4a489822c5fc56bd686fbb6636c6f7564666c6172652e636f6d
+
+# ✅ [faketls ] port=  443  31.220.75.12
+https://t.me/proxy?server=31.220.75.12&port=443&secret=ee76f9b332e9c1802ed1d91a5de6d80180636c6f7564666c6172652e636f6d
