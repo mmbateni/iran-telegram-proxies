@@ -1,4 +1,4 @@
-# Telegram MTProto proxies — 100 selected — 2026-06-22 05:05 UTC
+# Telegram MTProto proxies — 100 selected — 2026-06-23 04:05 UTC
 # Source: https://github.com/MahsaNetConfigTopic/proxy
 # Legend: ✅ alive (TCP responded)  ⚠ unverified (TCP timeout)
 
@@ -67,6 +67,9 @@ https://t.me/proxy?server=138.199.236.207&port=443&secret=eerighjjvxrfgrmcimjdcq
 
 # ✅ [faketls ] port=  443  138.201.195.175
 https://t.me/proxy?server=138.201.195.175&port=443&secret=eerighjjvxrfgrmcimjdcq
+
+# ✅ [faketls ] port=  443  141.94.158.18
+https://t.me/proxy?server=141.94.158.18&port=443&secret=eec37763c83384df9e52d8681b81b525557777772e636c6f7564666c6172652e636f6d
 
 # ✅ [faketls ] port=  443  142.132.185.118
 https://t.me/proxy?server=142.132.185.118&port=443&secret=ee008c3f6a9321de531462b058247cfd18676174657761792e696e7374616772616d2e636f6d
@@ -236,6 +239,9 @@ https://t.me/proxy?server=194.107.200.230&port=443&secret=ee993a21c5d12eeeafe670
 # ✅ [faketls ] port=  443  194.156.119.150
 https://t.me/proxy?server=194.156.119.150&port=443&secret=eee949387e1232f771bd77f9a6de7c293577622e7275
 
+# ✅ [faketls ] port=  443  194.233.87.152
+https://t.me/proxy?server=194.233.87.152&port=443&secret=ee4e7e3c97c9fc442cacb935955277ba29676f6f676c65617069732e636f6d
+
 # ✅ [faketls ] port=  443  194.26.141.32
 https://t.me/proxy?server=194.26.141.32&port=443&secret=ee100404ff0f48064fffffff9001b8696d696d656469612e737465616d706f77657265642e636f6d
 
@@ -281,9 +287,6 @@ https://t.me/proxy?server=216.128.146.245&port=443&secret=ee1603010200010001fc03
 # ✅ [faketls ] port=  443  217.60.23.120
 https://t.me/proxy?server=217.60.23.120&port=443&secret=ee97654a92160168eb92147da1a8c33aaf676f6f676c652e636f6d
 
-# ✅ [faketls ] port=  443  31.207.5.58
-https://t.me/proxy?server=31.207.5.58&port=443&secret=ee997f8741c0919f7b1e8a2c47d9bc1b106d61782e7275
-
 # ✅ [faketls ] port=  443  31.220.73.93
 https://t.me/proxy?server=31.220.73.93&port=443&secret=eefd4d1b6a40aef75802cb6569f0615e11636c6f7564666c6172652e636f6d
 
@@ -298,6 +301,3 @@ https://t.me/proxy?server=31.220.76.169&port=443&secret=eedb527145eb548da774b24e
 
 # ✅ [faketls ] port=  443  31.220.77.172
 https://t.me/proxy?server=31.220.77.172&port=443&secret=eec42425e9d0f27562ec958ced3cde9c3b636c6f7564666c6172652e636f6d
-
-# ✅ [faketls ] port=  443  31.220.78.93
-https://t.me/proxy?server=31.220.78.93&port=443&secret=ee5fcec9b1bf68764858dcb930f393ee72636c6f7564666c6172652e636f6d
