@@ -1,4 +1,4 @@
-# Telegram MTProto proxies — 100 selected — 2026-06-30 04:09 UTC
+# Telegram MTProto proxies — 100 selected — 2026-07-01 04:26 UTC
 # Source: https://github.com/MahsaNetConfigTopic/proxy
 # Legend: ✅ alive (TCP responded)  ⚠ unverified (TCP timeout)
 
@@ -170,9 +170,6 @@ https://t.me/proxy?server=161.97.169.231&port=443&secret=eecfcd09956992b6d4dd0bf
 # ✅ [faketls ] port=  443  165.232.81.38
 https://t.me/proxy?server=165.232.81.38&port=443&secret=eed77db43ee3721f0fcb40a4ff63b5cd2768797374657269612e616c7a6f636c6f75642e73697465
 
-# ✅ [faketls ] port=  443  165.245.215.108
-https://t.me/proxy?server=165.245.215.108&port=443&secret=ee4141322ba85f4966835bfffaa24f05
-
 # ✅ [faketls ] port=  443  167.233.12.183
 https://t.me/proxy?server=167.233.12.183&port=443&secret=eec333a2a17e2be71f9cf1887f3b22dc7d
 
@@ -236,14 +233,8 @@ https://t.me/proxy?server=193.109.120.106&port=443&secret=ee100404ff0f48064fffff
 # ✅ [faketls ] port=  443  193.17.95.11
 https://t.me/proxy?server=193.17.95.11&port=443&secret=eecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63qeecbagabaafwawog4kw63q==
 
-# ✅ [faketls ] port=  443  193.23.195.101
-https://t.me/proxy?server=193.23.195.101&port=443&secret=ee6288b4d5d9526c8d60cf8052e7eb0d3473742e6f6b63646e2e7275
-
 # ✅ [faketls ] port=  443  194.107.200.230
 https://t.me/proxy?server=194.107.200.230&port=443&secret=ee993a21c5d12eeeafe67043134e87bc777777772e636c6f7564666c6172652e636f6d
-
-# ✅ [faketls ] port=  443  194.156.119.150
-https://t.me/proxy?server=194.156.119.150&port=443&secret=eee949387e1232f771bd77f9a6de7c293577622e7275
 
 # ✅ [faketls ] port=  443  194.233.87.152
 https://t.me/proxy?server=194.233.87.152&port=443&secret=ee4e7e3c97c9fc442cacb935955277ba29676f6f676c65617069732e636f6d
@@ -281,6 +272,9 @@ https://t.me/proxy?server=204.168.197.199&port=443&secret=eeaa16be732bcf0c80b07d
 # ✅ [faketls ] port=  443  209.127.228.162
 https://t.me/proxy?server=209.127.228.162&port=443&secret=ee32b920dffb51643028e2f6b878d4eac16170706c652e636f6d
 
+# ✅ [faketls ] port=  443  212.115.103.198
+https://t.me/proxy?server=212.115.103.198&port=443&secret=ee0123456789abcdef0123456789abcdef7777772e636c6f7564666c6172652e636f6d
+
 # ✅ [faketls ] port=  443  212.192.13.122
 https://t.me/proxy?server=212.192.13.122&port=443&secret=eea2008db783e7e5872d4250d2245d8e7c617a7572652e6d6963726f736f66742e636f6d
 
@@ -301,3 +295,9 @@ https://t.me/proxy?server=31.220.73.75&port=443&secret=ee15561483d7091829be01a81
 
 # ✅ [faketls ] port=  443  31.220.75.12
 https://t.me/proxy?server=31.220.75.12&port=443&secret=ee76f9b332e9c1802ed1d91a5de6d80180636c6f7564666c6172652e636f6d
+
+# ✅ [faketls ] port=  443  31.220.76.169
+https://t.me/proxy?server=31.220.76.169&port=443&secret=eedb527145eb548da774b24e6c11d02021636c6f7564666c6172652e636f6d
+
+# ✅ [faketls ] port=  443  31.220.77.172
+https://t.me/proxy?server=31.220.77.172&port=443&secret=eec42425e9d0f27562ec958ced3cde9c3b636c6f7564666c6172652e636f6d
