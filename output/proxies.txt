@@ -1,4 +1,4 @@
-# Telegram MTProto proxies — 100 selected — 2026-07-12 03:31 UTC
+# Telegram MTProto proxies — 100 selected — 2026-07-13 03:34 UTC
 # Source: https://github.com/MahsaNetConfigTopic/proxy
 # Legend: ✅ alive (TCP responded)  ⚠ unverified (TCP timeout)
 
@@ -74,9 +74,6 @@ https://t.me/proxy?server=138.199.236.207&port=443&secret=eerighjjvxrfgrmcimjdcq
 # ✅ [faketls ] port=  443  138.201.195.175
 https://t.me/proxy?server=138.201.195.175&port=443&secret=eerighjjvxrfgrmcimjdcq==
 
-# ✅ [faketls ] port=  443  141.94.158.18
-https://t.me/proxy?server=141.94.158.18&port=443&secret=eec37763c83384df9e52d8681b81b525557777772e636c6f7564666c6172652e636f6d
-
 # ✅ [faketls ] port=  443  142.132.185.118
 https://t.me/proxy?server=142.132.185.118&port=443&secret=ee008c3f6a9321de531462b058247cfd18676174657761792e696e7374616772616d2e636f6d
 
@@ -95,8 +92,8 @@ https://t.me/proxy?server=144.124.227.214&port=443&secret=eeddnegydjvxrfgrmcimjq
 # ✅ [faketls ] port=  443  144.124.228.85
 https://t.me/proxy?server=144.124.228.85&port=443&secret=eeddnegydjvxrfgrmcimjqty2ruewvrdgfuzxquy29tz
 
-# ✅ [faketls ] port=  443  144.124.230.94
-https://t.me/proxy?server=144.124.230.94&port=443&secret=eecbagabaafwawog4kw63qaaaaruewvrdgfuzxquy29tzmfyywthdi5jb212yw4ubmfqdmeuy29t
+# ✅ [faketls ] port=  443  144.124.230.25
+https://t.me/proxy?server=144.124.230.25&port=443&secret=eenegydjvxrfgrmcimjdcq****
 
 # ✅ [faketls ] port=  443  144.124.232.130
 https://t.me/proxy?server=144.124.232.130&port=443&secret=eexifpb2gbv9shh2kvi5l
@@ -277,6 +274,9 @@ https://t.me/proxy?server=2.26.7.251&port=443&secret=ee9945c587716452618a218583a
 
 # ✅ [faketls ] port=  443  2.27.12.116
 https://t.me/proxy?server=2.27.12.116&port=443&secret=ee19130c695cf699d93f5a31ecf380d4426d742e736b6f746f62617a2e7275
+
+# ✅ [faketls ] port=  443  2.27.41.207
+https://t.me/proxy?server=2.27.41.207&port=443&secret=ee9436fa39ab47ccb34f217ac6d06b4e58617669746f2e7275
 
 # ✅ [faketls ] port=  443  204.168.192.220
 https://t.me/proxy?server=204.168.192.220&port=443&secret=eee35ed3d65d03b78f3618f6c209e488be636c6f7564666c6172652e636f6d
