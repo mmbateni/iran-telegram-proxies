@@ -1,4 +1,4 @@
-# Telegram MTProto proxies — 100 selected — 2026-07-24 03:20 UTC
+# Telegram MTProto proxies — 100 selected — 2026-07-25 03:19 UTC
 # Source: https://github.com/MahsaNetConfigTopic/proxy
 # Legend: ✅ alive (TCP responded)  ⚠ unverified (TCP timeout)
 
