@@ -472,12 +472,12 @@ def main() -> None:
                     help=f"TCP connect timeout in seconds (default: {DEFAULT_TIMEOUT})")
     ap.add_argument("-w", "--workers", type=int,   default=DEFAULT_WORKERS,
                     help=f"Concurrent TCP checkers (default: {DEFAULT_WORKERS})")
-ap.add_argument(
-    "--source",
-    action="append",
-    default=None,
-    help="Proxy list source (may be specified multiple times)",
-)
+    ap.add_argument(
+        "--source",
+        action="append",
+        default=None,
+        help="Proxy list source (may be specified multiple times)",
+    )
     ap.add_argument("--out",           type=str,   default="output/proxies.txt",
                     help="Output text file path")
     ap.add_argument("--html",          type=str,   default="output/proxies.html",
@@ -486,10 +486,10 @@ ap.add_argument(
                     help="Skip TCP checks (diversity-only mode)")
     args = ap.parse_args()
 
-sources = args.source if args.source else SOURCE_URLS
+    sources = args.source if args.source else SOURCE_URLS
 
-_log(f"[1/4] Fetching proxy list ({len(sources)} source(s)) …")
-lines = fetch_lines(sources)
+    _log(f"[1/4] Fetching proxy list ({len(sources)} source(s)) …")
+    lines = fetch_lines(sources)
     _log(f"      {len(lines)} lines fetched")
 
     _log("[2/4] Parsing …")
