@@ -35,9 +35,47 @@ from urllib.request import urlopen
 # ---------------------------------------------------------------------------
 # Configuration defaults
 # ---------------------------------------------------------------------------
-SOURCE_URL = (
-    "https://raw.githubusercontent.com/MahsaNetConfigTopic/proxy/main/proxies.txt"
-)
+# ---------------------------------------------------------------------------
+# Configuration defaults
+# ---------------------------------------------------------------------------
+
+SOURCE_URLS = [
+    # Primary source (original)
+    "https://raw.githubusercontent.com/MahsaNetConfigTopic/proxy/main/proxies.txt",
+
+    # Fallbacks
+    "https://raw.githubusercontent.com/SoliSpirit/mtproto/master/all_proxies.txt",
+    "https://raw.githubusercontent.com/Grim1313/mtproto-for-telegram/master/all_proxies.txt",
+    "https://raw.githubusercontent.com/ALIILAPRO/MTProtoProxy/main/mtproto.txt",
+    "https://raw.githubusercontent.com/hookzof/socks5_list/master/tg/mtproto.txt",
+    "https://raw.githubusercontent.com/Freedom-Guard/Proxy/main/proxies/mtproto.txt",
+    "https://raw.githubusercontent.com/securemanager/MTPROTO/main/proxies.txt",
+    "https://raw.githubusercontent.com/kort0881/telegram-proxy-collector/main/mtproto_proxies.txt",
+    "https://raw.githubusercontent.com/seriyps/mtproto_proxy/master/proxies.txt",
+    "https://raw.githubusercontent.com/MTProto/MTProtoProxy/master/proxies/mtproto.txt",
+    "https://raw.githubusercontent.com/mtProtoProxy/MTProxy-official/master/proxies.txt",
+    "https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/TELEGRAM_PROXY_SUB/main/telegram_proxy_no1.txt",
+    "https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/TELEGRAM_PROXY_SUB/main/telegram_proxy_no2.txt",
+    "https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/TELEGRAM_PROXY_SUB/main/telegram_proxy_no3.txt",
+    "https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/TELEGRAM_PROXY_SUB/main/telegram_proxy_no4.txt",
+    "https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/TELEGRAM_PROXY_SUB/main/telegram_proxy_no5.txt",
+    "https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/TELEGRAM_PROXY_SUB/main/telegram_proxy_no6.txt",
+    "https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/TELEGRAM_PROXY_SUB/main/telegram_proxy_no7.txt",
+    "https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/TELEGRAM_PROXY_SUB/main/telegram_proxy_no8.txt",
+    "https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/TELEGRAM_PROXY_SUB/main/telegram_proxy_no9.txt",
+    "https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/TELEGRAM_PROXY_SUB/main/telegram_proxy_no10.txt",
+    "https://raw.githubusercontent.com/Surfboardv2ray/TGProto/main/proxies.txt",
+    "https://raw.githubusercontent.com/iwh3n/tg-proxy/main/proxys/All_Proxys.txt",
+    "https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/mtproto.txt",
+    "https://raw.githubusercontent.com/helptmoop/Free-Telegram-Proxies/main/global-iran-russia-proxies.txt",
+    "https://raw.githubusercontent.com/helptmoop/Free-Telegram-Proxies/main/turkmenistan-global-iran-russia.txt",
+    "https://raw.githubusercontent.com/Argh94/Proxy-List/main/MTProto.txt",
+    "https://raw.githubusercontent.com/klondike0x/mtp4tg-proxies/main/all_proxies.txt",
+    "https://raw.githubusercontent.com/weltimistar777-crypto/MTProxy/main/proxy.txt",
+    "https://raw.githubusercontent.com/Therealwh/MTPproxyLIST/main/verified/proxy_all_verified.txt",
+    "https://raw.githubusercontent.com/Therealwh/MTPproxyLIST/main/verified/proxy_all_tme_verified.txt",
+    "https://raw.githubusercontent.com/blog1703/tgonline/main/proxies.txt",
+]
 DEFAULT_COUNT   = 100
 DEFAULT_TIMEOUT = 4    # seconds for TCP connect
 DEFAULT_WORKERS = 200  # concurrent socket checkers
@@ -72,15 +110,39 @@ def is_valid_hostname(host: str) -> bool:
 # ---------------------------------------------------------------------------
 # Fetching
 # ---------------------------------------------------------------------------
-def fetch_lines(url: str) -> list[str]:
-    """Download *url* and return non-empty, stripped lines."""
-    with urlopen(url, timeout=20) as resp:
-        return [
-            line.strip()
-            for line in resp.read().decode("utf-8", errors="replace").splitlines()
-            if line.strip()
-        ]
+from urllib.error import HTTPError, URLError
 
+def fetch_lines(urls: list[str]) -> list[str]:
+    """Download from the first working source."""
+
+    last_error = None
+
+    for i, url in enumerate(urls, 1):
+        try:
+            _log(f"      Trying source {i}/{len(urls)}: {url}")
+
+            with urlopen(url, timeout=20) as resp:
+                lines = [
+                    line.strip()
+                    for line in resp.read()
+                    .decode("utf-8", errors="replace")
+                    .splitlines()
+                    if line.strip()
+                ]
+
+            if lines:
+                _log(f"      Success ({len(lines)} lines)")
+                return lines
+
+            _log("      Empty file")
+
+        except (HTTPError, URLError, OSError) as e:
+            last_error = e
+            _log(f"      Failed: {e}")
+
+    raise RuntimeError(
+        f"All {len(urls)} proxy sources failed. Last error: {last_error}"
+    )
 # ---------------------------------------------------------------------------
 # Parsing
 # ---------------------------------------------------------------------------
@@ -410,8 +472,12 @@ def main() -> None:
                     help=f"TCP connect timeout in seconds (default: {DEFAULT_TIMEOUT})")
     ap.add_argument("-w", "--workers", type=int,   default=DEFAULT_WORKERS,
                     help=f"Concurrent TCP checkers (default: {DEFAULT_WORKERS})")
-    ap.add_argument("--source",        type=str,   default=SOURCE_URL,
-                    help="URL of the raw proxy list")
+ap.add_argument(
+    "--source",
+    action="append",
+    default=None,
+    help="Proxy list source (may be specified multiple times)",
+)
     ap.add_argument("--out",           type=str,   default="output/proxies.txt",
                     help="Output text file path")
     ap.add_argument("--html",          type=str,   default="output/proxies.html",
@@ -420,8 +486,10 @@ def main() -> None:
                     help="Skip TCP checks (diversity-only mode)")
     args = ap.parse_args()
 
-    _log(f"[1/4] Fetching proxy list from {args.source} …")
-    lines = fetch_lines(args.source)
+sources = args.source if args.source else SOURCE_URLS
+
+_log(f"[1/4] Fetching proxy list ({len(sources)} source(s)) …")
+lines = fetch_lines(sources)
     _log(f"      {len(lines)} lines fetched")
 
     _log("[2/4] Parsing …")
