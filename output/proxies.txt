@@ -1,51 +1,303 @@
-# Telegram MTProto proxies — 16 selected — 2026-08-26 01:40 UTC
+# Telegram MTProto proxies — 100 selected — 2026-08-27 08:36 UTC
 # Source: https://github.com/MahsaNetConfigTopic/proxy
 # Legend: ✅ alive (TCP responded)  ⚠ unverified (TCP timeout)
 
-# ✅ [faketls ] port=  443  abo-ali-sina.basalam.info
-https://t.me/proxy?server=abo-ali-sina.basalam.info&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
+# ✅ [faketls ] port=  443  65.109.83.141
+https://t.me/proxy?server=65.109.83.141&port=443&secret=eeddffffffc5a1168b2ff3eba31cbfffff7765622e62616c652e6169
 
-# ✅ [faketls ] port=  443  valla.chemidonam.co.uk
-https://t.me/proxy?server=valla.chemidonam.co.uk&port=443&secret=eenegydjvxrfgrmcimjdcq
+# ✅ [faketls ] port=  443  god-mode-on.peachsoft.co.uk.
+https://t.me/proxy?server=god-mode-on.peachsoft.co.uk.&port=443&secret=eeddff05e65a69a6a7fd1a28a28a121fff7765622e62616c652e6169
 
-# ✅ [faketls ] port=  443  icon.davazdah.info
-https://t.me/proxy?server=icon.davazdah.info&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d
+# ✅ [faketls ] port=  443  freeconnect.lol
+https://t.me/proxy?server=freeconnect.lol&port=443&secret=eef7a565db46f8f5bf156054d86db42969617669746f2e7275
 
-# ✅ [faketls ] port=  443  mohandes.karshenasi.info
-https://t.me/proxy?server=mohandes.karshenasi.info&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d
+# ✅ [faketls ] port=  443  ping-pong.mangom-kangom.info
+https://t.me/proxy?server=ping-pong.mangom-kangom.info&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
 
-# ✅ [faketls ] port= 2096  lux.lavazemi1.co.uk
-https://t.me/proxy?server=lux.lavazemi1.co.uk&port=2096&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d
+# ✅ [faketls ] port=  443  world-mordak.maraton-co.info.
+https://t.me/proxy?server=world-mordak.maraton-co.info.&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
 
-# ✅ [basic   ] port=  443  sub.iran-tehran.co.uk
-https://t.me/proxy?server=sub.iran-tehran.co.uk&port=443&secret=3rbeyoissb16xrktaidcxqk=
+# ✅ [faketls ] port=  443  megaconnect.click
+https://t.me/proxy?server=megaconnect.click&port=443&secret=ee283d3bf19b80aa8a9ca06a2244c01c8a617669746f2e7275
 
-# ✅ [basic   ] port=  443  sop.foodpatuy.ir
-https://t.me/proxy?server=sop.foodpatuy.ir&port=443&secret=3rbeyoissb16xrktaidcxqk=
+# ✅ [faketls ] port=  443  t.meow-network.com
+https://t.me/proxy?server=t.meow-network.com&port=443&secret=ee5622e11fff3e49bcc85280197a6106b5742e6d656f772d6e6574776f726b2e636f6d
 
-# ✅ [faketls ] port=  443  webhook.what-ever.co.uk
-https://t.me/proxy?server=webhook.what-ever.co.uk&port=443&secret=eeddffffffc5a1168b2ff3eba31cbfffff7765622e62616c652e6169
+# ✅ [faketls ] port=  443  nyakawai.shop
+https://t.me/proxy?server=nyakawai.shop&port=443&secret=eefddb26d5047ce1787ece232a57832391617669746f2e7275
 
-# ✅ [basic   ] port=  443  logs.jinxandjack.co.uk
-https://t.me/proxy?server=logs.jinxandjack.co.uk&port=443&secret=7t3____forall_proxy___93zwiuymfszs5haq==
+# ✅ [faketls ] port=  443  forward-gree.server-space52.info
+https://t.me/proxy?server=forward-gree.server-space52.info&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
 
-# ✅ [faketls ] port=  443  sorfezh.malfilk-voq.co.uk
-https://t.me/proxy?server=sorfezh.malfilk-voq.co.uk&port=443&secret=eenegydjvxrfgrmcimjdcq
+# ✅ [faketls ] port=  443  api.server2-5mk.info
+https://t.me/proxy?server=api.server2-5mk.info&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
 
-# ✅ [faketls ] port=  443  app.what-ever.co.uk
-https://t.me/proxy?server=app.what-ever.co.uk&port=443&secret=eeddffffffc5a1168b2ff3eba31cbfffff7765622e62616c652e6169
+# ✅ [faketls ] port=  443  x.shmelproxy.top
+https://t.me/proxy?server=x.shmelproxy.top&port=443&secret=eefc2612ff65a557fddf1d1b334395ef23617669746f2e7275
 
-# ✅ [faketls ] port=  443  ftp.jinxandjack.co.uk
-https://t.me/proxy?server=ftp.jinxandjack.co.uk&port=443&secret=eeddffffffc5a1168b2ff3eba31cbfffff7765622e62616c652e6169
+# ✅ [faketls ] port= 8443  kurd.tryzub-it.co.uk.
+https://t.me/proxy?server=kurd.tryzub-it.co.uk.&port=8443&secret=eerighjjvxrfgrmcimjdcq
 
-# ✅ [faketls ] port=  443  webhook.vingardium.co.uk
-https://t.me/proxy?server=webhook.vingardium.co.uk&port=443&secret=eeddffffffc5a1168b2ff3eba31cbfffff7765622e62616c652e6169
+# ✅ [faketls ] port=25565  172.65.105.80
+https://t.me/proxy?server=172.65.105.80&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d
 
-# ✅ [faketls ] port=  443  sv2.just-money.co.uk
-https://t.me/proxy?server=sv2.just-money.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d
+# ✅ [faketls ] port=25565  172.65.122.51
+https://t.me/proxy?server=172.65.122.51&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d
 
-# ✅ [faketls ] port=  443  server.nl-arvancloud.co.uk
-https://t.me/proxy?server=server.nl-arvancloud.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
+# ✅ [faketls ] port=   88  king-of-the-world.ir.bishdhaep.info.
+https://t.me/proxy?server=king-of-the-world.ir.bishdhaep.info.&port=88&secret=ee0000f00f0f775555fffffff5006e2e69626973636f7474692e79656b74616e65742e636f6d
 
-# ✅ [faketls ] port=  443  download.lv426.co.uk
-https://t.me/proxy?server=download.lv426.co.uk&port=443&secret=eeddffffffc5a1168b2ff3eba31cbfffff7765622e62616c652e6169
+# ✅ [faketls ] port= 2053  silnet.varfootball.co.uk
+https://t.me/proxy?server=silnet.varfootball.co.uk&port=2053&secret=eenegydjvxrfgrmcimjdcq
+
+# ✅ [faketls ] port=25565  can.you.tell.me.how.can.i.bokhoramet.kiroftopmine.site.
+https://t.me/proxy?server=can.you.tell.me.how.can.i.bokhoramet.kiroftopmine.site.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d
+
+# ✅ [faketls ] port=35450  masire-gozare.omr.marchelo.info
+https://t.me/proxy?server=masire-gozare.omr.marchelo.info&port=35450&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
+
+# ✅ [faketls ] port=  853  dev.nowabst.net
+https://t.me/proxy?server=dev.nowabst.net&port=853&secret=ee54079943a5db4dc9163650c09dfc806d766b2e636f6d
+
+# ✅ [faketls ] port=   88  persian.gulf.ir.olsjddhf.info.
+https://t.me/proxy?server=persian.gulf.ir.olsjddhf.info.&port=88&secret=ee0000f00f0f775555fffffff5006e2e69626973636f7474692e79656b74616e65742e636f6d
+
+# ✅ [dd      ] port=  443  bo0ji.co.uk.
+https://t.me/proxy?server=bo0ji.co.uk.&port=443&secret=ddf0eeb0bd9adc4fd4a93994ee3b2a216b
+
+# ✅ [dd      ] port=  443  Fast.finecooking.info
+https://t.me/proxy?server=Fast.finecooking.info&port=443&secret=ddf0eeb0bd9adc4fd4a93994ee3b2a216b
+
+# ✅ [dd      ] port= 8443  nab.goooalir.co.uk
+https://t.me/proxy?server=nab.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09
+
+# ✅ [dd      ] port= 8443  s47n.ir.ir.ir.meli-n12.info
+https://t.me/proxy?server=s47n.ir.ir.ir.meli-n12.info&port=8443&secret=dd104462821249bd7ac519130220c25d09
+
+# ✅ [dd      ] port= 4455  bfesedv.uk.
+https://t.me/proxy?server=bfesedv.uk.&port=4455&secret=dd104462821249bd7ac519130220c25d09
+
+# ✅ [dd      ] port= 4455  severjadid.co.uk
+https://t.me/proxy?server=severjadid.co.uk&port=4455&secret=dd104462821249bd7ac519130220c25d09
+
+# ✅ [basic   ] port=  443  135.181.129.162
+https://t.me/proxy?server=135.181.129.162&port=443&secret=3xnnaqiaaqah8amdhujmot0
+
+# ✅ [basic   ] port=  443  65.109.106.167
+https://t.me/proxy?server=65.109.106.167&port=443&secret=3xnnaqiaaqah8amdhujmot0
+
+# ✅ [basic   ] port=  443  65.21.222.229
+https://t.me/proxy?server=65.21.222.229&port=443&secret=3xnnaqiaaqah8amdhujmot0
+
+# ✅ [basic   ] port=  443  shap.arrad.shop
+https://t.me/proxy?server=shap.arrad.shop&port=443&secret=75b9e5fbd8a0dbd3be2dcd02404fd8f0
+
+# ✅ [basic   ] port=  443  yeke-jahan.mohearn.co.uk.
+https://t.me/proxy?server=yeke-jahan.mohearn.co.uk.&port=443&secret=7t3_bezaaaan_rooooosh_93zwiuymfszs5haq==
+
+# ✅ [basic   ] port= 8443  u2601.ir.meli-n13.info
+https://t.me/proxy?server=u2601.ir.meli-n13.info&port=8443&secret=104462821249bd7ac519130220c25d09
+
+# ✅ [basic   ] port=   80  haji.assassinationpuma.co.uk.
+https://t.me/proxy?server=haji.assassinationpuma.co.uk.&port=80&secret=3rbz3hntxabj6l5bqipx2_s=
+
+# ✅ [basic   ] port=   80  dynu.ir.telbet.lol.
+https://t.me/proxy?server=dynu.ir.telbet.lol.&port=80&secret=3rbz3hntxabj6l5bqipx2_s=
+
+# ✅ [basic   ] port=   80  Hub.whiteblox.org.
+https://t.me/proxy?server=Hub.whiteblox.org.&port=80&secret=3rbz3hntxabj6l5bqipx2_s=
+
+# ✅ [basic   ] port=   22  172.65.111.25
+https://t.me/proxy?server=172.65.111.25&port=22&secret=aaaaaaaaaaaaaaaaaaaaaa==
+
+# ✅ [basic   ] port=   22  172.65.113.134
+https://t.me/proxy?server=172.65.113.134&port=22&secret=aaaaaaaaaaaaaaaaaaaaaa==
+
+# ✅ [basic   ] port= 2020  94.184.32.101.aprawood.ir
+https://t.me/proxy?server=94.184.32.101.aprawood.ir&port=2020&secret=aaaaaaaaaaaaaaaaaaaaaa==
+
+# ✅ [basic   ] port=   22  new.canmycheshm.co.uk.
+https://t.me/proxy?server=new.canmycheshm.co.uk.&port=22&secret=aaaaaaaaaaaaaaaaaaaaaa==
+
+# ✅ [basic   ] port=   22  close.your.mouth.and.eyse.kiroftopmine.site.
+https://t.me/proxy?server=close.your.mouth.and.eyse.kiroftopmine.site.&port=22&secret=aaaaaaaaaaaaaaaaaaaaaa==
+
+# ⚠  [faketls ] port=  443  51.250.81.95
+https://t.me/proxy?server=51.250.81.95&port=443&secret=eeca9d1ff80c1c1758dc115b7b9a90b7a76d6564626c6f636b2e666974
+
+# ⚠  [faketls ] port=  443  ad1.arixo.shop
+https://t.me/proxy?server=ad1.arixo.shop&port=443&secret=eee09f46368021f91b92ad3dea14c7ac896164312e617269786f2e73686f70
+
+# ⚠  [faketls ] port=  443  node.easyproxy.cfd
+https://t.me/proxy?server=node.easyproxy.cfd&port=443&secret=ee6be95a795ee766da019cd30044b837c16e6f64652e6561737970726f78792e636664
+
+# ⚠  [faketls ] port=  443  relay.rknsosi.shop
+https://t.me/proxy?server=relay.rknsosi.shop&port=443&secret=ee93e8816b5fd5c054bc95442701329e0072656c61792e726b6e736f73692e73686f70
+
+# ⚠  [faketls ] port=  443  www.telbet.app
+https://t.me/proxy?server=www.telbet.app&port=443&secret=ee3073e1ec5c594e267e7636f8f5dc73f12d6d656469612e737465616d706f77657265642e636f6d
+
+# ⚠  [faketls ] port=  443  beam.whitelist.cyou
+https://t.me/proxy?server=beam.whitelist.cyou&port=443&secret=ee96671dab2ecd8b178da5371b6081550b6265616d2e77686974656c6973742e63796f75
+
+# ⚠  [faketls ] port=   65  cherman-coupe.ghablameh-co.co.im.
+https://t.me/proxy?server=cherman-coupe.ghablameh-co.co.im.&port=65&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
+
+# ⚠  [dd      ] port=25565  195.254.165.249
+https://t.me/proxy?server=195.254.165.249&port=25565&secret=dd79e344818749bd7ac519130220c25d09
+
+# ⚠  [basic   ] port=  443  vaja.darkmoon.ir
+https://t.me/proxy?server=vaja.darkmoon.ir&port=443&secret=7ps1w03kw9nym4popsj1r2z2ywphlmly
+
+# ⚠  [basic   ] port=   80  www.darniod.ooo
+https://t.me/proxy?server=www.darniod.ooo&port=80&secret=7hbz3hntxabj6l5bqipx2_std3d3lnlhag9vlmnvbq==
+
+# ⚠  [basic   ] port=   80  alone.telbet.app
+https://t.me/proxy?server=alone.telbet.app&port=80&secret=3rbz3hntxabj6l5bqipx2_s=
+
+# ⚠  [basic   ] port=   33  3-33-3.ir
+https://t.me/proxy?server=3-33-3.ir&port=33&secret=3qaaaaaaaaaaaaaaaaaaaaa
+
+# ⚠  [basic   ] port=  911  yekta.blazepath.info
+https://t.me/proxy?server=yekta.blazepath.info&port=911&secret=bmifg-8rbm1b1rh_m_jsmq
+
+# ⚠  [basic   ] port=   88  https-cdn-ddns.itdeveloper.info.
+https://t.me/proxy?server=https-cdn-ddns.itdeveloper.info.&port=88&secret=7nnnaqiaaqah8amdhujmot0=
+
+# ✅ [faketls ] port=  443  full-vasl.peachsoft.co.uk.
+https://t.me/proxy?server=full-vasl.peachsoft.co.uk.&port=443&secret=eeddff05e65a69a6a7fd1a28a28a121fff7765622e62616c652e6169
+
+# ✅ [faketls ] port=  443  server3.server-space52.info
+https://t.me/proxy?server=server3.server-space52.info&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
+
+# ✅ [faketls ] port=  443  server2.server2-5mk.info
+https://t.me/proxy?server=server2.server2-5mk.info&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
+
+# ✅ [faketls ] port= 8443  turk.dasy2k1.co.uk.
+https://t.me/proxy?server=turk.dasy2k1.co.uk.&port=8443&secret=eerighjjvxrfgrmcimjdcq
+
+# ✅ [faketls ] port=   88  milion.users.ir.bishdhaep.info.
+https://t.me/proxy?server=milion.users.ir.bishdhaep.info.&port=88&secret=ee0000f00f0f775555fffffff5006e2e69626973636f7474692e79656b74616e65742e636f6d
+
+# ✅ [faketls ] port= 2053  iro.varfootball2.co.uk
+https://t.me/proxy?server=iro.varfootball2.co.uk&port=2053&secret=eenegydjvxrfgrmcimjdcq
+
+# ✅ [faketls ] port=  853  ge.nowabst.net
+https://t.me/proxy?server=ge.nowabst.net&port=853&secret=ee5a281fcc91f7ec3ce293d643395222ad766b2e636f6d
+
+# ✅ [dd      ] port=  443  ir.speed.finecooking.info
+https://t.me/proxy?server=ir.speed.finecooking.info&port=443&secret=ddf0eeb0bd9adc4fd4a93994ee3b2a216b
+
+# ✅ [dd      ] port= 8443  soh5.goooalir.co.uk
+https://t.me/proxy?server=soh5.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09
+
+# ✅ [dd      ] port= 8443  s7n.ir.ir.ir.meli-n12.info
+https://t.me/proxy?server=s7n.ir.ir.ir.meli-n12.info&port=8443&secret=dd104462821249bd7ac519130220c25d09
+
+# ✅ [dd      ] port= 4455  yarypple.co.uk.
+https://t.me/proxy?server=yarypple.co.uk.&port=4455&secret=dd104462821249bd7ac519130220c25d09
+
+# ✅ [basic   ] port=  443  vasl-sho.mohearn.co.uk.
+https://t.me/proxy?server=vasl-sho.mohearn.co.uk.&port=443&secret=7t3_bezaaaan_rooooosh_93zwiuymfszs5haq==
+
+# ✅ [basic   ] port= 8443  0iiio6k1.ir.meli-n13.info
+https://t.me/proxy?server=0iiio6k1.ir.meli-n13.info&port=8443&secret=104462821249bd7ac519130220c25d09
+
+# ✅ [basic   ] port=   80  www.royaclinic.co.uk
+https://t.me/proxy?server=www.royaclinic.co.uk&port=80&secret=3rbz3hntxabj6l5bqipx2_s=
+
+# ✅ [basic   ] port=   80  rich.whiteblox.org.
+https://t.me/proxy?server=rich.whiteblox.org.&port=80&secret=3rbz3hntxabj6l5bqipx2_s=
+
+# ✅ [basic   ] port= 2020  94.184.32.108.aprawood.ir
+https://t.me/proxy?server=94.184.32.108.aprawood.ir&port=2020&secret=aaaaaaaaaaaaaaaaaaaaaa==
+
+# ⚠  [faketls ] port= 4443  bezan-ke.khob-mizani.manege-desktop-for.co.im.
+https://t.me/proxy?server=bezan-ke.khob-mizani.manege-desktop-for.co.im.&port=4443&secret=eerighjjvxrfgrmcimjdcq
+
+# ⚠  [dd      ] port=25565  195.254.165.250
+https://t.me/proxy?server=195.254.165.250&port=25565&secret=dd79e344818749bd7ac519130220c25d09
+
+# ✅ [faketls ] port=  443  ftp.jinxandjack.co.uk.
+https://t.me/proxy?server=ftp.jinxandjack.co.uk.&port=443&secret=eeddffffffc5a1168b2ff3eba31cbfffff7765622e62616c652e6169
+
+# ✅ [faketls ] port=  443  udymau.server-space52.info
+https://t.me/proxy?server=udymau.server-space52.info&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
+
+# ✅ [faketls ] port=  443  for--you.server2-5mk.info
+https://t.me/proxy?server=for--you.server2-5mk.info&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
+
+# ✅ [faketls ] port= 8443  my.dasy2k1.co.uk.
+https://t.me/proxy?server=my.dasy2k1.co.uk.&port=8443&secret=eerighjjvxrfgrmcimjdcq
+
+# ✅ [faketls ] port= 2096  noron.talebi.co.uk
+https://t.me/proxy?server=noron.talebi.co.uk&port=2096&secret=eenegydjvxrfgrmcimjdcq
+
+# ✅ [faketls ] port=  853  gw.nowabst.net
+https://t.me/proxy?server=gw.nowabst.net&port=853&secret=ee6104d5fd936c4930978f0227166deaa9766b2e636f6d
+
+# ✅ [dd      ] port= 8443  vasle.goooalir.co.uk
+https://t.me/proxy?server=vasle.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09
+
+# ✅ [dd      ] port= 8443  sn.ir.ir.ir.meli-n12.info
+https://t.me/proxy?server=sn.ir.ir.ir.meli-n12.info&port=8443&secret=dd104462821249bd7ac519130220c25d09
+
+# ✅ [dd      ] port= 4455  new7.mizanmizanesgh.co.uk
+https://t.me/proxy?server=new7.mizanmizanesgh.co.uk&port=4455&secret=dd104462821249bd7ac519130220c25d09
+
+# ✅ [basic   ] port=  443  benz.mohearn.co.uk.
+https://t.me/proxy?server=benz.mohearn.co.uk.&port=443&secret=7t3_bezaaaan_rooooosh_93zwiuymfszs5haq==
+
+# ✅ [basic   ] port= 8443  88o6k1.ir.meli-n13.info
+https://t.me/proxy?server=88o6k1.ir.meli-n13.info&port=8443&secret=104462821249bd7ac519130220c25d09
+
+# ⚠  [basic   ] port=   80  noise.hajikalashatelservieshamrahavalcandy.co.uk
+https://t.me/proxy?server=noise.hajikalashatelservieshamrahavalcandy.co.uk&port=80&secret=7hbz3hntxabj6l5bqipx2_std3d3lnlhag9vlmnvbq==
+
+# ✅ [basic   ] port= 2020  94.184.32.110.aprawood.ir
+https://t.me/proxy?server=94.184.32.110.aprawood.ir&port=2020&secret=aaaaaaaaaaaaaaaaaaaaaa==
+
+# ⚠  [dd      ] port=25565  195.254.165.251
+https://t.me/proxy?server=195.254.165.251&port=25565&secret=dd79e344818749bd7ac519130220c25d09
+
+# ✅ [faketls ] port=  443  irancell-mci-rightell-adsl.visalawyer.co.uk.
+https://t.me/proxy?server=irancell-mci-rightell-adsl.visalawyer.co.uk.&port=443&secret=eeddffffffc5a1168b2ff3eba31cbfffff7765622e62616c652e6169
+
+# ✅ [faketls ] port=  443  blind.server-space52.info
+https://t.me/proxy?server=blind.server-space52.info&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
+
+# ✅ [faketls ] port=  443  abcd.server2-5mk.info
+https://t.me/proxy?server=abcd.server2-5mk.info&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
+
+# ✅ [faketls ] port= 8443  dns.speed-benz.co.uk
+https://t.me/proxy?server=dns.speed-benz.co.uk&port=8443&secret=eenegydjvxrfgrmcimjdcq
+
+# ✅ [faketls ] port= 2096  new.lambforkebeb.co.uk
+https://t.me/proxy?server=new.lambforkebeb.co.uk&port=2096&secret=eenegydjvxrfgrmcimjdcq
+
+# ✅ [dd      ] port= 8443  tassian.goooalir.co.uk
+https://t.me/proxy?server=tassian.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09
+
+# ✅ [dd      ] port= 8443  s44447n.ir.ir.ir.meli-n12.info
+https://t.me/proxy?server=s44447n.ir.ir.ir.meli-n12.info&port=8443&secret=dd104462821249bd7ac519130220c25d09
+
+# ✅ [dd      ] port= 4455  rootssh2.co.uk.
+https://t.me/proxy?server=rootssh2.co.uk.&port=4455&secret=dd104462821249bd7ac519130220c25d09
+
+# ✅ [basic   ] port=  443  sub.iran-tehran.co.uk.
+https://t.me/proxy?server=sub.iran-tehran.co.uk.&port=443&secret=3rbeyoissb16xrktaidcxqk=
+
+# ✅ [basic   ] port= 2020  94.184.39.7.aprawood.ir
+https://t.me/proxy?server=94.184.39.7.aprawood.ir&port=2020&secret=aaaaaaaaaaaaaaaaaaaaaa==
+
+# ⚠  [dd      ] port=25565  195.254.165.253
+https://t.me/proxy?server=195.254.165.253&port=25565&secret=dd79e344818749bd7ac519130220c25d09
+
+# ✅ [faketls ] port=  443  last.konstruktion.co.uk.
+https://t.me/proxy?server=last.konstruktion.co.uk.&port=443&secret=eeddffffffc5a1168b2ff3eba31cbfffff7765622e62616c652e6169
+
+# ✅ [faketls ] port=  443  dark-brown.server-space52.info
+https://t.me/proxy?server=dark-brown.server-space52.info&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
+
+# ✅ [faketls ] port= 8443  ving.mozitop.co.uk
+https://t.me/proxy?server=ving.mozitop.co.uk&port=8443&secret=eenegydjvxrfgrmcimjdcq
