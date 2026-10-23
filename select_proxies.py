@@ -22,6 +22,8 @@ python select_proxies.py [--count N] [--timeout T] [--workers W]
 """
 from __future__ import annotations
 import argparse
+import base64
+import binascii
 import concurrent.futures
 import html as html_module
 import re
@@ -29,7 +31,7 @@ import socket
 import sys
 from collections import defaultdict
 from datetime import datetime, timezone
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import quote, unquote, urlparse
 from urllib.request import urlopen
 
 # ---------------------------------------------------------------------------
@@ -112,8 +114,11 @@ def is_valid_hostname(host: str) -> bool:
 # ---------------------------------------------------------------------------
 from urllib.error import HTTPError, URLError
 
+USED_SOURCE = ""   # set by fetch_lines(); shown in the output headers
+
 def fetch_lines(urls: list[str]) -> list[str]:
     """Download from the first working source."""
+    global USED_SOURCE
 
     last_error = None
 
@@ -132,6 +137,7 @@ def fetch_lines(urls: list[str]) -> list[str]:
 
             if lines:
                 _log(f"      Success ({len(lines)} lines)")
+                USED_SOURCE = url
                 return lines
 
             _log("      Empty file")
@@ -147,72 +153,98 @@ def fetch_lines(urls: list[str]) -> list[str]:
 # Parsing
 # ---------------------------------------------------------------------------
 _PROXY_RE = re.compile(
-    r"(?:tg://proxy|https://t\.me/proxy)\?"
-    r"(?:.*?&)?server=([^&\s)]+)&(?:.*?&)?port=(\d+)&(?:.*?&)?secret=([0-9a-fA-F+/=A-Za-z]{32,})",
+    r"(?:tg://proxy|https?://(?:www\.)?(?:t\.me|telegram\.me)/proxy)\?"
+    r"(?:.*?&)?server=([^&\s)]+)&(?:.*?&)?port=(\d+)&(?:.*?&)?secret=([A-Za-z0-9+/=_\-%]{16,})",
     re.IGNORECASE,
 )
 
-def _make_clean_url(server: str, port: int, secret: str) -> str:
-    """Reconstruct a clean, well-formed tg://proxy link."""
-    return f"tg://proxy?server={server}&port={port}&secret={secret}"
+_HEX_RE    = re.compile(r"^[0-9a-fA-F]+$")
+_B64_RE    = re.compile(r"^[A-Za-z0-9+/_\-]+={0,2}$")
+_DOMAIN_RE = re.compile(r"^[A-Za-z0-9.\-]{3,253}$")
 
-def _make_tme_url(server: str, port: int, secret: str) -> str:
-    """Return an https://t.me/proxy link.
+def normalize_secret(secret: str) -> str | None:
+    """Return the secret as lowercase hex, or None if it is not a valid secret.
 
-    Uses standard HTTPS so it works in every browser regardless of whether
-    Telegram has registered the tg:// URI handler on the device.
+    Sources publish secrets either as hex or as base64/base64url. Base64 is
+    CASE-SENSITIVE, so it must never be lower-cased; it is decoded to hex here
+    instead (Telegram accepts hex for every secret type). Secret layouts:
+      plain   : 16 bytes                     -> 32 hex chars
+      dd      : 0xdd + 16 bytes              -> 34 hex chars
+      FakeTLS : 0xee + 16 bytes + SNI domain -> 34+ hex chars
     """
-    return f"https://t.me/proxy?server={server}&port={port}&secret={secret}"
+    s = unquote(secret.strip()).replace(" ", "+")   # '+' may arrive as space
+    if _HEX_RE.match(s) and len(s) % 2 == 0:
+        h = s.lower()
+    elif _B64_RE.match(s):
+        try:
+            t = s.rstrip("=").replace("+", "-").replace("/", "_")
+            h = base64.urlsafe_b64decode(t + "=" * (-len(t) % 4)).hex()
+        except (binascii.Error, ValueError):
+            return None
+    else:
+        return None
+
+    if len(h) == 32:
+        return h
+    if h.startswith("dd") and len(h) == 34:
+        return h
+    if h.startswith("ee") and len(h) > 34:
+        try:
+            domain = bytes.fromhex(h[34:]).decode("ascii")
+        except (ValueError, UnicodeDecodeError):
+            return None
+        return h if _DOMAIN_RE.match(domain) else None
+    return None
+
+def _make_clean_url(server: str, port: int, secret: str) -> str:
+    """Return a tg://proxy link — opens the Telegram app directly, no browser
+    and no t.me (which is blocked in Iran) involved."""
+    return (f"tg://proxy?server={quote(server, safe='.-:[]')}"
+            f"&port={port}&secret={secret}")
+
+def _build(server: str | None, port_s, secret: str | None) -> dict | None:
+    if not (server and port_s and secret):
+        return None
+    try:
+        port = int(port_s)
+    except (TypeError, ValueError):
+        return None
+    if not 1 <= port <= 65535:
+        return None
+    server = unquote(server).strip().rstrip(".")     # drop FQDN trailing dot
+    if not re.match(r"^[\w.\-:\[\]]{3,}$", server) or not is_valid_hostname(server):
+        return None
+    secret = normalize_secret(secret)
+    if not secret:
+        return None
+    return {
+        "raw":    _make_clean_url(server, port, secret),
+        "server": server,
+        "port":   port,
+        "secret": secret,
+    }
 
 def parse_proxy(line: str) -> dict | None:
     """
     Parse a tg://proxy?... or https://t.me/proxy?... line.
-    Returns a dict with keys: raw (clean reconstructed URL), server, port, secret.
+    Returns a dict with keys: raw (clean tg:// URL), server, port, secret (hex).
     """
     line = line.strip()
     m = _PROXY_RE.search(line)
     if m:
-        try:
-            server = m.group(1)
-            port   = int(m.group(2))
-            secret = m.group(3).lower()
-            if not re.match(r"^[\w.\-:]{3,}$", server) or not is_valid_hostname(server):
-                return None
-            return {
-                "raw":    _make_clean_url(server, port, secret),
-                "server": server,
-                "port":   port,
-                "secret": secret,
-            }
-        except ValueError:
-            pass
+        p = _build(m.group(1), m.group(2), m.group(3))
+        if p:
+            return p
 
-    if line.startswith("tg://"):
-        clean = re.split(r"[\s)\]]", line)[0]
-        line_norm = clean.replace("tg://proxy", "http://proxy", 1)
-    elif line.startswith("https://t.me/proxy"):
-        clean = re.split(r"[\s)\]]", line)[0]
-        line_norm = clean
-    else:
+    # Fallback: parameters in any order
+    m2 = re.search(r"(?:tg://proxy|https?://\S*?/proxy)\?[^\s)\]\"'<>]+", line, re.IGNORECASE)
+    if not m2:
         return None
-
     try:
-        qs = parse_qs(urlparse(line_norm).query)
-        server = qs.get("server", [None])[0]
-        port_s = qs.get("port",   [None])[0]
-        secret = qs.get("secret", [None])[0]
-        if not (server and port_s and secret):
-            return None
-        port   = int(port_s)
-        secret = secret.lower()
-        if not re.match(r"^[\w.\-:]{3,}$", server) or not is_valid_hostname(server):
-            return None
-        return {
-            "raw":    _make_clean_url(server, port, secret),
-            "server": server,
-            "port":   port,
-            "secret": secret,
-        }
+        query = urlparse(m2.group(0).replace("tg://proxy", "http://proxy", 1)).query
+        # keep_blank_values + manual split so '+' in base64 is not turned into ' '
+        qs = dict(kv.split("=", 1) for kv in query.split("&") if "=" in kv)
+        return _build(qs.get("server"), qs.get("port"), qs.get("secret"))
     except Exception:
         return None
 
@@ -320,7 +352,8 @@ def write_txt(proxies: list[dict], path: str) -> None:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     lines = [
         f"# Telegram MTProto proxies — {len(proxies)} selected — {now}",
-        f"# Source: https://github.com/MahsaNetConfigTopic/proxy",
+        f"# Source: {USED_SOURCE or 'n/a'}",
+        f"# Tap a tg:// link (or open the HTML page) to add the proxy in Telegram",
         f"# Legend: ✅ alive (TCP responded)  ⚠ unverified (TCP timeout)",
         "",
     ]
@@ -328,7 +361,7 @@ def write_txt(proxies: list[dict], path: str) -> None:
         tag   = "✅" if p.get("alive") else "⚠ "
         stype = secret_type(p["secret"])
         lines.append(f"# {tag} [{stype:8s}] port={p['port']:5d}  {p['server']}")
-        lines.append(_make_tme_url(p["server"], p["port"], p["secret"]))
+        lines.append(p["raw"])
         lines.append("")
     with open(path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
@@ -346,15 +379,16 @@ def write_html(proxies: list[dict], path: str) -> None:
         type_badge = f'<span class="badge type-{stype}">{stype}</span>'
         server_esc = html_module.escape(p["server"])
         raw_esc    = html_module.escape(p["raw"])
-        tme_link   = html_module.escape(_make_tme_url(p["server"], p["port"], p["secret"]))
+        # tg:// hands the proxy straight to the Telegram app (no browser hop,
+        # no t.me). No target="_blank": a new tab would stay blank.
         rows.append(f"""
 <tr>
 <td class="num">{i}</td>
 <td>{alive_badge} {type_badge}</td>
 <td class="server">{server_esc}:{p['port']}</td>
 <td class="actions">
-<a href="{tme_link}" class="btn open" target="_blank" rel="noopener">Open in Telegram</a>
-<button class="btn copy" onclick="copyText('{raw_esc}')">Copy link</button>
+<a href="{raw_esc}" class="btn open">Connect in Telegram</a>
+<button class="btn copy" data-link="{raw_esc}" onclick="copyText(this.dataset.link)">Copy link</button>
 </td>
 </tr>""")
     rows_html = "\n".join(rows)
@@ -423,7 +457,9 @@ table {{ font-size: .78rem; }}
 <h1>📡 Telegram MTProto Proxies</h1>
 <p class="meta">
 {len(proxies)} proxies selected · Updated {now} ·
-Source: <a href="https://github.com/MahsaNetConfigTopic/proxy">MahsaNetConfigTopic/proxy</a>
+Source: <a href="{html_module.escape(USED_SOURCE)}">{html_module.escape(USED_SOURCE.split('githubusercontent.com/')[-1] or 'n/a')}</a><br>
+Tap <b>Connect in Telegram</b> — the Telegram app opens and asks to enable the proxy.
+On desktop, the browser may first ask to allow opening Telegram.
 </p>
 <table>
 <thead>
@@ -441,11 +477,19 @@ Source: <a href="https://github.com/MahsaNetConfigTopic/proxy">MahsaNetConfigTop
 <div id="toast">Copied!</div>
 <script>
 function copyText(text) {{
-navigator.clipboard.writeText(text).then(() => {{
+const done = () => {{
 const t = document.getElementById('toast');
 t.classList.add('show');
 setTimeout(() => t.classList.remove('show'), 1800);
-}});
+}};
+if (navigator.clipboard && window.isSecureContext) {{
+navigator.clipboard.writeText(text).then(done);
+}} else {{
+const ta = document.createElement('textarea');
+ta.value = text; document.body.appendChild(ta); ta.select();
+try {{ document.execCommand('copy'); done(); }} catch (e) {{}}
+ta.remove();
+}}
 }}
 </script>
 </body>
