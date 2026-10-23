@@ -25,7 +25,12 @@ jobs:
     name: Fetch · Check · Select · Commit
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write   # commit output/
+      pages: write      # publish the clickable HTML page
+      id-token: write   # required by actions/deploy-pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -83,3 +88,26 @@ jobs:
 
           echo "Failed to push after retries." >&2
           exit 1
+
+      # raw.githubusercontent.com serves files as plain text, so links there
+      # are never clickable. GitHub Pages serves real HTML, where the
+      # tg://proxy buttons open the Telegram app directly.
+      # One-time setup: Settings → Pages → Source: "GitHub Actions".
+      - name: Prepare Pages site
+        run: |
+          mkdir -p _site
+          cp output/proxies.html _site/index.html
+          cp output/proxies.txt  _site/proxies.txt
+          touch _site/.nojekyll
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
