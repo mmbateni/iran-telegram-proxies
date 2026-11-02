@@ -1,4 +1,4 @@
-# Telegram MTProto proxies — 100 selected — 2026-11-01 05:26 UTC
+# Telegram MTProto proxies — 100 selected — 2026-11-02 05:25 UTC
 # Source: https://raw.githubusercontent.com/SoliSpirit/mtproto/master/all_proxies.txt
 # Tap a tg:// link (or open the HTML page) to add the proxy in Telegram
 # Legend: ✅ alive (TCP responded)  ⚠ unverified (TCP timeout)
@@ -6,38 +6,11 @@
 # ✅ [faketls ] port=  443  petros-es.co.uk
 tg://proxy?server=petros-es.co.uk&port=443&secret=ee79e344818749bd7ac519130220c25d09706574726f732d65732e636f2e756b
 
-# ✅ [faketls ] port=  443  mirizo22.copperwren.click
-tg://proxy?server=mirizo22.copperwren.click&port=443&secret=ee920a4026fcc79354d87c30db9280e5786d6972697a6f32322e636f707065727772656e2e636c69636b
-
-# ✅ [faketls ] port=  443  vile61.foxglade.xyz
-tg://proxy?server=vile61.foxglade.xyz&port=443&secret=ee920a4026fcc79354d87c30db9280e57876696c6536312e666f78676c6164652e78797a
-
 # ✅ [faketls ] port=  443  max.kimt.click
 tg://proxy?server=max.kimt.click&port=443&secret=ee1b153cf06dbd43c6085c359a6702eb936d61782e6b696d742e636c69636b
 
-# ✅ [faketls ] port=  443  kostyanchekloh.lol
-tg://proxy?server=kostyanchekloh.lol&port=443&secret=ee3f72634c46d320aaa30d8bb2682e9b497975672d6c696e6b2e7275
-
-# ✅ [faketls ] port=  443  nema57.quietfjord.click
-tg://proxy?server=nema57.quietfjord.click&port=443&secret=eeb8e5365580b9ad3c2ee355dfcbc245e56e656d6135372e7175696574666a6f72642e636c69636b
-
-# ✅ [faketls ] port=  443  gato74.saltfern.xyz
-tg://proxy?server=gato74.saltfern.xyz&port=443&secret=ee214011ba04108a7b1836df3a5e918b3b6761746f37342e73616c746665726e2e78797a
-
-# ✅ [faketls ] port=  443  relay.surfvpn.app
-tg://proxy?server=relay.surfvpn.app&port=443&secret=eedf44a4347c1eb8938c7e63340bd1ca4972656c61792e7375726676706e2e617070
-
-# ✅ [faketls ] port=  443  edge-pl.vetka.rest
-tg://proxy?server=edge-pl.vetka.rest&port=443&secret=eeb6e1ab49f971ecdd9d3a2220a6784c687777772e626f6f6b696e672e636f6d
-
-# ✅ [dd      ] port=  443  91.107.140.144
-tg://proxy?server=91.107.140.144&port=443&secret=dd79e7010200010007f0030386e24c3add
-
-# ✅ [dd      ] port=  443  91.107.166.216
-tg://proxy?server=91.107.166.216&port=443&secret=dd79e7010200010007f0030386e24c3add
-
-# ✅ [dd      ] port=  443  91.107.171.35
-tg://proxy?server=91.107.171.35&port=443&secret=dd79e7010200010007f0030386e24c3add
+# ✅ [faketls ] port=  443  fast.proxynet.tech
+tg://proxy?server=fast.proxynet.tech&port=443&secret=ee08787a2b7fd3220d9d35679aab082cab666173742e70726f78796e65742e74656368
 
 # ✅ [dd      ] port=  443  team.fast--pro.co.uk
 tg://proxy?server=team.fast--pro.co.uk&port=443&secret=dd104462821249bd7ac519130220c25d09
@@ -51,14 +24,17 @@ tg://proxy?server=ir.speed.finecooking.info&port=443&secret=ddf0eeb0bd9adc4fd4a9
 # ✅ [dd      ] port=  443  NET.hoookoopdn.site
 tg://proxy?server=NET.hoookoopdn.site&port=443&secret=dd104462821249bd7ac519130220c25d09
 
-# ✅ [dd      ] port= 8443  159.69.9.248
-tg://proxy?server=159.69.9.248&port=8443&secret=dd104462821249bd7ac519130220c25d09
+# ✅ [dd      ] port=  443  Tond.strobox.info
+tg://proxy?server=Tond.strobox.info&port=443&secret=ddf0eeb0bd9adc4fd4a93994ee3b2a216b
+
+# ✅ [dd      ] port= 8443  188.206-197-43.ir
+tg://proxy?server=188.206-197-43.ir&port=8443&secret=dd1044048187495dfac59a030220c25cb3
 
 # ✅ [dd      ] port= 8443  62.238.62.179
 tg://proxy?server=62.238.62.179&port=8443&secret=dd104462821249bd7ac519130220c25d09
 
-# ✅ [dd      ] port= 8443  65.109.248.100
-tg://proxy?server=65.109.248.100&port=8443&secret=dd104462821249bd7ac519130220c25d09
+# ✅ [dd      ] port= 8443  62.238.63.143
+tg://proxy?server=62.238.63.143&port=8443&secret=dd104462821249bd7ac519130220c25d09
 
 # ✅ [dd      ] port= 8443  PAyDaR.goooalir.co.uk
 tg://proxy?server=PAyDaR.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09
@@ -72,8 +48,8 @@ tg://proxy?server=s47n.ir.ir.ir.meli-n12.info&port=8443&secret=dd104462821249bd7
 # ✅ [dd      ] port= 8443  www.yesyesno.ir
 tg://proxy?server=www.yesyesno.ir&port=8443&secret=dd1701186abd0ea60123192e26434f91a5
 
-# ✅ [dd      ] port= 4455  royaclinic.co.uk
-tg://proxy?server=royaclinic.co.uk&port=4455&secret=dd104462821249bd7ac519130220c25d09
+# ✅ [dd      ] port= 4455  ahvaz.co.uk
+tg://proxy?server=ahvaz.co.uk&port=4455&secret=dd104462821249bd7ac519130220c25d09
 
 # ✅ [dd      ] port= 7799  vahshianeh.ghodratitarin.info
 tg://proxy?server=vahshianeh.ghodratitarin.info&port=7799&secret=dd10400103324995b07c030386e886e7f1
@@ -99,8 +75,8 @@ tg://proxy?server=royaclinic.beauty&port=4455&secret=dd104462821249bd7ac51913022
 # ✅ [basic   ] port=  443  93.113.230.145
 tg://proxy?server=93.113.230.145&port=443&secret=140493a281a661d69a5712690344a429
 
-# ✅ [basic   ] port=  443  Magic.godserver52.info
-tg://proxy?server=Magic.godserver52.info&port=443&secret=00000000000000000000000000000000
+# ✅ [basic   ] port=  443  api.godserver52.info
+tg://proxy?server=api.godserver52.info&port=443&secret=00000000000000000000000000000000
 
 # ✅ [basic   ] port=  443  server2.server-space52.info
 tg://proxy?server=server2.server-space52.info&port=443&secret=00000000000000000000000000000000
@@ -113,9 +89,6 @@ tg://proxy?server=178.105.127.56&port=8443&secret=104462821249bd7ac519130220c8dd
 
 # ✅ [basic   ] port= 8443  178.105.201.7
 tg://proxy?server=178.105.201.7&port=8443&secret=104462821249bd7ac519130220c8dd09
-
-# ✅ [basic   ] port= 8443  208.87.242.223
-tg://proxy?server=208.87.242.223&port=8443&secret=104462821249bd7ac519130220c8dd09
 
 # ✅ [basic   ] port= 8443  49.12.36.40
 tg://proxy?server=49.12.36.40&port=8443&secret=104462821249bd7ac519130220c8dd09
@@ -135,8 +108,8 @@ tg://proxy?server=ir.ataman.info&port=8443&secret=104462821249bd7ac519130220c8dd
 # ✅ [basic   ] port= 8443  tim.pd.mi.v6.mgi.5s.n.p.wu.basketbalo.ir
 tg://proxy?server=tim.pd.mi.v6.mgi.5s.n.p.wu.basketbalo.ir&port=8443&secret=79e344818749bd7ac519130220c25d09
 
-# ✅ [basic   ] port= 8443  pofak.mikhay.co.uk
-tg://proxy?server=pofak.mikhay.co.uk&port=8443&secret=104462821249bd7ac519130220c25d09
+# ✅ [basic   ] port= 8443  3etare.co.uk
+tg://proxy?server=3etare.co.uk&port=8443&secret=79e344818749bd7ac519130220c25d09
 
 # ✅ [basic   ] port= 8443  play.goole.com.craj.ir
 tg://proxy?server=play.goole.com.craj.ir&port=8443&secret=79e344818749bd7ac519130220c25d09
@@ -149,6 +122,9 @@ tg://proxy?server=digikala.com.torob.ir.divar.ir.basalam.com.eyfst.ir&port=8443&
 
 # ✅ [basic   ] port= 8443  ryx.pc6.6s.kfu.c6.npd.wl.lpg.xy.b.ferijon.ir
 tg://proxy?server=ryx.pc6.6s.kfu.c6.npd.wl.lpg.xy.b.ferijon.ir&port=8443&secret=79e344818749bd7ac519130220c25d09
+
+# ✅ [basic   ] port= 8443  ir-ir.flipme.info
+tg://proxy?server=ir-ir.flipme.info&port=8443&secret=104462821249bd7ac519130220c8dd09
 
 # ✅ [basic   ] port= 8443  ir.genesbyjohn.info
 tg://proxy?server=ir.genesbyjohn.info&port=8443&secret=104462821249bd7ac519130220c8dd09
@@ -168,17 +144,14 @@ tg://proxy?server=ir-ir.grumpyoldmen.info&port=8443&secret=104462821249bd7ac5191
 # ✅ [basic   ] port= 8443  Help.helps.help
 tg://proxy?server=Help.helps.help&port=8443&secret=79e344818749bd7ac519130220c25d09
 
-# ✅ [basic   ] port= 8443  see.ketab.info
-tg://proxy?server=see.ketab.info&port=8443&secret=79e344818749bd7ac519130220c25d09
-
 # ✅ [basic   ] port= 8443  ir.lv223.info
 tg://proxy?server=ir.lv223.info&port=8443&secret=104462821249bd7ac519130220c8dd09
 
 # ✅ [basic   ] port= 8443  foc.pf.og.mro.7f.j7.spb.f.lwww.ir
 tg://proxy?server=foc.pf.og.mro.7f.j7.spb.f.lwww.ir&port=8443&secret=79e344818749bd7ac519130220c25d09
 
-# ✅ [basic   ] port= 8443  cdn1.magli200.info
-tg://proxy?server=cdn1.magli200.info&port=8443&secret=79e344818749bd7ac519130220c25d09
+# ✅ [basic   ] port= 8443  white.magli200.info
+tg://proxy?server=white.magli200.info&port=8443&secret=79e344818749bd7ac519130220c25d09
 
 # ✅ [basic   ] port= 8443  mio.miosen.cyou
 tg://proxy?server=mio.miosen.cyou&port=8443&secret=79e344818749bd7ac519130220c25d09
@@ -222,9 +195,6 @@ tg://proxy?server=star.telbet.lol&port=8443&secret=79e344818749bd7ac519130220c25
 # ✅ [basic   ] port= 8443  Dho.phd.iv.md.h.g.if.7.www1www.ir
 tg://proxy?server=Dho.phd.iv.md.h.g.if.7.www1www.ir&port=8443&secret=79e344818749bd7ac519130220c25d09
 
-# ✅ [basic   ] port= 8443  Gue.id.6b.2l.du.x8.fi.l.www78-62-184-9.ir
-tg://proxy?server=Gue.id.6b.2l.du.x8.fi.l.www78-62-184-9.ir&port=8443&secret=79e344818749bd7ac519130220c25d09
-
 # ✅ [basic   ] port= 8443  ir.xeonxu.info
 tg://proxy?server=ir.xeonxu.info&port=8443&secret=104462821249bd7ac519130220c8dd09
 
@@ -234,17 +204,14 @@ tg://proxy?server=ir.xn--ds-bja.info&port=8443&secret=104462821249bd7ac519130220
 # ✅ [basic   ] port= 8443  isna.ir.asriran.com.varzesh3.com.yalandonyi.ir
 tg://proxy?server=isna.ir.asriran.com.varzesh3.com.yalandonyi.ir&port=8443&secret=79e344818749bd7ac519130220c25d09
 
-# ✅ [basic   ] port= 7443  Strait-of-Hormuz.ir.bcsadwtgd.info
-tg://proxy?server=Strait-of-Hormuz.ir.bcsadwtgd.info&port=7443&secret=79e344818749bd7ac519130220c25d09
+# ✅ [basic   ] port=   22  appstoff.info
+tg://proxy?server=appstoff.info&port=22&secret=79e344818749bd7ac519130220c25d09
 
 # ✅ [basic   ] port= 5500  worldmaster.varomax.co.uk
 tg://proxy?server=worldmaster.varomax.co.uk&port=5500&secret=79e462833349bd7ac519130220c25d10
 
 # ✅ [basic   ] port= 5500  philadelphia.hezarto.info
 tg://proxy?server=philadelphia.hezarto.info&port=5500&secret=ec742282124f04d318551341ead76457
-
-# ✅ [basic   ] port= 7443  Rostam.ir.igakwvwa.info
-tg://proxy?server=Rostam.ir.igakwvwa.info&port=7443&secret=79e344818749bd7ac519130220c25d09
 
 # ✅ [basic   ] port=   85  rad.irani-pr.net
 tg://proxy?server=rad.irani-pr.net&port=85&secret=79e344818749bd7ac519130220c25d09
@@ -254,6 +221,9 @@ tg://proxy?server=isaco.ir.jnxu.ir&port=8880&secret=79e344818749bd7ac519130220c2
 
 # ✅ [basic   ] port= 5500  web-kook.mosbatbashim.info
 tg://proxy?server=web-kook.mosbatbashim.info&port=5500&secret=0c30628212cbbd7ac519130205525d15
+
+# ⚠  [faketls ] port=  443  x.shmelproxy.top
+tg://proxy?server=x.shmelproxy.top&port=443&secret=eefc2612ff65a557fddf1d1b334395ef237975672d6c696e6b2e7275
 
 # ⚠  [faketls ] port=  443  topproxt.asia
 tg://proxy?server=topproxt.asia&port=443&secret=eebbb00c5d6d8a742b1a762499eb7d4912617669746f2e7275
@@ -267,11 +237,11 @@ tg://proxy?server=mtproxygram.lol&port=853&secret=ee608f40eb7d1aad1fbc6405c5ed26
 # ⚠  [dd      ] port=25565  195.254.165.249
 tg://proxy?server=195.254.165.249&port=25565&secret=dd79e344818749bd7ac519130220c25d09
 
+# ⚠  [basic   ] port=  443  2.28.6.207
+tg://proxy?server=2.28.6.207&port=443&secret=1404937e66a54c96a371d19da5d19e94
+
 # ⚠  [basic   ] port= 8443  tex.l1.mu.pe.6c.bep.0y.xd.n.te.77-35-93-6.ir
 tg://proxy?server=tex.l1.mu.pe.6c.bep.0y.xd.n.te.77-35-93-6.ir&port=8443&secret=79e344818749bd7ac519130220c25d09
-
-# ⚠  [basic   ] port= 8443  ir-ir.flipme.info
-tg://proxy?server=ir-ir.flipme.info&port=8443&secret=104462821249bd7ac519130220c8dd09
 
 # ⚠  [basic   ] port= 8443  tig.ofok.tui.frt.7fg7.88n.jananeman.ir
 tg://proxy?server=tig.ofok.tui.frt.7fg7.88n.jananeman.ir&port=8443&secret=79e344818749bd7ac519130220c25d09
@@ -294,11 +264,41 @@ tg://proxy?server=731.masi.ir.he6fhd.ru&port=8443&secret=dd104462821249bd7ac5191
 # ✅ [dd      ] port= 8443  s7n.ir.ir.ir.meli-n12.info
 tg://proxy?server=s7n.ir.ir.ir.meli-n12.info&port=8443&secret=dd104462821249bd7ac519130220c25d09
 
-# ✅ [dd      ] port= 4455  jadide.mamadali.co.uk
-tg://proxy?server=jadide.mamadali.co.uk&port=4455&secret=dd104462821249bd7ac519130220c25d09
+# ✅ [dd      ] port= 4455  royaclinic.co.uk
+tg://proxy?server=royaclinic.co.uk&port=4455&secret=dd104462821249bd7ac519130220c25d09
 
-# ✅ [basic   ] port=  443  loud-teal.godserver52.info
-tg://proxy?server=loud-teal.godserver52.info&port=443&secret=00000000000000000000000000000000
+# ✅ [basic   ] port=  443  Magic.godserver52.info
+tg://proxy?server=Magic.godserver52.info&port=443&secret=00000000000000000000000000000000
 
 # ✅ [basic   ] port=  443  web.server-space52.info
 tg://proxy?server=web.server-space52.info&port=443&secret=00000000000000000000000000000000
+
+# ✅ [basic   ] port= 8443  ir-ir.ataman.info
+tg://proxy?server=ir-ir.ataman.info&port=8443&secret=104462821249bd7ac519130220c8dd09
+
+# ✅ [basic   ] port= 8443  nocloudnew.co.uk
+tg://proxy?server=nocloudnew.co.uk&port=8443&secret=79e344818749bd7ac519130220c25d09
+
+# ✅ [basic   ] port= 8443  ir-ir.grasic.info
+tg://proxy?server=ir-ir.grasic.info&port=8443&secret=104462821249bd7ac519130220c8dd09
+
+# ✅ [basic   ] port= 8443  new.magli200.info
+tg://proxy?server=new.magli200.info&port=8443&secret=79e344818749bd7ac519130220c25d09
+
+# ✅ [basic   ] port= 8443  ir-ir.panhandleflyers.info
+tg://proxy?server=ir-ir.panhandleflyers.info&port=8443&secret=104462821249bd7ac519130220c8dd09
+
+# ✅ [basic   ] port= 8443  ir-ir.xeonxu.info
+tg://proxy?server=ir-ir.xeonxu.info&port=8443&secret=104462821249bd7ac519130220c8dd09
+
+# ✅ [basic   ] port= 2096  shoes.golgoli2.co.uk
+tg://proxy?server=shoes.golgoli2.co.uk&port=2096&secret=79e344818749bd7ac519130220c25d09
+
+# ⚠  [dd      ] port=25565  195.254.165.250
+tg://proxy?server=195.254.165.250&port=25565&secret=dd79e344818749bd7ac519130220c25d09
+
+# ✅ [faketls ] port=  443  Rudmoain.co.uk
+tg://proxy?server=Rudmoain.co.uk&port=443&secret=eef0eeb0bd9adc4fd4a93994ee3b2a216b63646e2e79656b74616e65742e636f6d
+
+# ✅ [dd      ] port=  443  bo0ji.co.uk
+tg://proxy?server=bo0ji.co.uk&port=443&secret=ddf0eeb0bd9adc4fd4a93994ee3b2a216b
